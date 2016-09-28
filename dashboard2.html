@@ -1,0 +1,260 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPUK</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        
+          <!-- off-canvas title bar for 'small' screen -->
+          <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+            <div class="title-bar-left">
+              <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+              <span class="title-bar-title">Menu</span>
+            </div>
+            <div class="title-bar-right">
+        
+              <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
+            </div>
+          </div>
+        
+          <!-- off-canvas left menu -->
+          <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+            <ul class="vertical dropdown menu" data-dropdown-menu>
+              <li><a href="left_item_1">Home</a></li>
+              <li><a href="left_item_2">Jobs</a></li>
+              <li><a href="left_item_3">locums</a></li>
+              <li><a href="left_item_3">Discounts</a></li>
+              <li><a href="left_item_3">Contact</a></li>
+            </ul>
+          </div>
+        
+          <!-- off-canvas right menu -->
+          <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+            <ul class="vertical dropdown menu" data-dropdown-menu>
+              <li><a href="right_item_1">Login</a></li>
+              <li><a href="right_item_2">Signup</a></li>
+            </ul>
+          </div>
+        
+          <!-- "wider" top-bar menu for 'medium' and up -->
+          <div class="top-bar" id="widemenu">
+            <div class="row ">
+              <div class="top-bar-left medium-8">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li class="menu-text"><a href="/"><img src="assets/img/logo1.png"></a></li>
+                  <li><a href="jobs.html">Jobs</a></li>
+                  <li><a href="locums.html">Locums</a></li>
+                  <li><a href="discounts.html">Discounts</a></li>
+                  <li><a href="about.html">About</a></li>
+                </ul>
+              </div>
+              <div class="top-bar-right medium-4 clearfix">
+                <a href="#" data-open="loginModal" class="button secondary float-right"><i class="fi-home"></i> Login</a>
+                <a href="signup.html" class="button secondary float-right"><i class="fi-clipboard-pencil"></i> Signup</a>
+              </div>
+            </div>
+          </div>
+        
+          <div id="loginModal" class="reveal" data-animation-in="fadeIn" data-animation-out="fadeOut" data-reveal>
+            <div class="row">
+              <div class="large-6 columns auth-plain">
+                <div class="signup-panel left-solid">
+                  <p class="welcome">Registered Users</p>
+                  <form>
+                    <div class="row collapse">
+                      <div class="small-2  columns">
+                        <span class="prefix"><i class="fi-torso-female"></i></span>
+                      </div>
+                      <div class="small-10  columns">
+                        <input type="text" placeholder="username">
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="small-2 columns ">
+                        <span class="prefix"><i class="fi-lock"></i></span>
+                      </div>
+                      <div class="small-10 columns ">
+                        <input type="text" placeholder="password">
+                      </div>
+                    </div>
+                  </form>
+                  <a href="#" class="button ">Log In </a>
+                </div>
+              </div>
+        
+              <div class="large-6 columns auth-plain">
+                <div class="signup-panel newusers">
+                  <p class="welcome"> New User?</p>
+                  <p>Whether you're a GP or mangage a health practice you can create an account here: </p><br>
+                  <a href="signup.html" class="button ">Sign Up</a></br>
+                </div>
+              </div>
+        
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+        
+
+
+      <!-- original content goes in this container -->
+      <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Nav Sidebar -->
+        <!-- This is source ordered to be pulled to the left on larger screens -->
+        <div class="large-3 columns ">
+          <div class="panel">
+            <a href="#"><img src="http://placehold.it/300x240&text=[img]" /></a>
+            <h5><a href="#">Your Name</a></h5>
+              <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+              <section class="section">
+                <h5 class="title"><a href="#">Section 1</a></h5>
+              </section>
+              <section class="section">
+                <h5 class="title"><a href="#">Section 2</a></h5>
+              </section>
+              <section class="section">
+                <h5 class="title"><a href="#">Section 3</a></h5>
+              </section>
+              <section class="section">
+                <h5 class="title"><a href="#">Section 4</a></h5>
+              </section>
+              <section class="section">
+                <h5 class="title"><a href="#">Section 5</a></h5>
+              </section>
+              <section class="section">
+                <h5 class="title"><a href="#">Section 6</a></h5>
+              </section>
+            </div>
+        
+          </div>
+        </div>
+        
+        <!-- Main Feed -->
+        <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+        <div class="large-6 columns">
+        
+          <!-- Feed Entry -->
+          <div class="row">
+            <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
+            <div class="large-10 columns">
+              <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Reply</a></li>
+                <li><a href="">Share</a></li>
+              </ul>
+        
+        
+              <h6>2 Comments</h6>
+              <div class="row">
+                <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]" /></div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+              </div>
+              <div class="row">
+                <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]" /></div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Feed Entry -->
+        
+          <hr />
+        
+          <!-- Feed Entry -->
+          <div class="row">
+            <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
+            <div class="large-10 columns">
+              <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Reply</a></li>
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Feed Entry -->
+        
+          <hr />
+        
+          <!-- Feed Entry -->
+          <div class="row">
+            <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]" /></div>
+            <div class="large-10 columns">
+              <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Reply</a></li>
+                <li><a href="">Share</a></li>
+              </ul>
+        
+        
+              <h6>2 Comments</h6>
+              <div class="row">
+                <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]" /></div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Feed Entry -->
+        
+        </div>
+        
+        <!-- Right Sidebar -->
+        <!-- On small devices this column is hidden -->
+        <aside class="large-3 columns hide-for-small">
+          <p><img src="http://placehold.it/300x440&text=[ad]" /></p>
+          <p><img src="http://placehold.it/300x440&text=[ad]" /></p>
+        </aside>
+        
+        </div>
+        
+        <footer class="footer">
+          <div class="row">
+            <div class="small-12 medium-6 large-5 columns">
+              <p class="logo"><i class="fi-shield"></i> GPUK</p>
+              <p class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Jobs</a>
+                <a href="#">Locums</a>
+                <a href="#">Discount</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </p>
+              <p class="copywrite">Copywrite GPUK © 2015</p>
+            </div>
+            <div class="small-12 medium-6 large-4 columns">
+              <ul class="contact">
+                <li><p><i class="fi-marker"></i>Hwyl Hub, Merthyr Tydfil CF47 8LD</p></li>
+                <li><p><i class="fi-telephone"></i>01685 377777</p></li>
+                <li><p><i class="fi-mail"></i>hello@gpuk.com</p></li>
+              </ul>
+            </div>
+            <div class="small-12 medium-12 large-3 columns">
+              <p class="about">Follow GPUK</p>
+              <p class="about subheader">The one stop rescource for GP's and Medical Practices</p>
+              <ul class="inline-list social">
+                <a href="#"><i class="fi-social-facebook"></i></a>
+                <a href="#"><i class="fi-social-twitter"></i></a>
+                <a href="#"><i class="fi-social-linkedin"></i></a>
+                <a href="#"><i class="fi-social-github"></i></a>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        
+        <!-- close wrapper, no more content after this -->
+      </div>
+
+
+    </div>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+     new WOW().init();
+     </script>
+  </body>
+</html>

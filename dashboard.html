@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPUK</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+
+        <div class="off-canvas-wrapper">
+        
+          <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        
+            <!-- off-canvas title bar for 'small' screen -->
+            <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+              <div class="title-bar-left">
+                <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+                <span class="title-bar-title">Menu</span>
+              </div>
+              <div class="title-bar-right">
+        
+                <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
+              </div>
+            </div>
+        
+            <!-- off-canvas left menu -->
+            <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+              <ul class="vertical dropdown menu" data-dropdown-menu>
+                <li><a href="left_item_1">Home</a></li>
+                <li><a href="left_item_2">Jobs</a></li>
+                <li><a href="left_item_3">locums</a></li>
+                <li><a href="left_item_3">Discounts</a></li>
+                <li><a href="left_item_3">Contact</a></li>
+              </ul>
+            </div>
+        
+            <!-- off-canvas right menu -->
+            <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+              <ul class="vertical dropdown menu" data-dropdown-menu>
+                <li><a href="right_item_1">Dashboard</a></li>
+                <li><a href="right_item_2">Profile</a></li>
+                <li><a href="right_item_2">Settings</a></li>
+                <li><a href="right_item_2">Notifications</a></li>
+              </ul>
+            </div>
+        
+            <!-- "wider" top-bar menu for 'medium' and up -->
+            <div class="top-bar" id="widemenu">
+              <div class="row ">
+                <div class="top-bar-left medium-8">
+                  <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text"><img src="assets/img/logo.png"></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="locum-calendar.html">Locums</a></li>
+                    <li><a href="discounts.html">Discounts</a></li>
+                    <li><a href="about.html">About</a></li>
+                  </ul>
+                </div>
+                <div class="top-bar-right medium-4 clearfix">
+                  <div class="notifyButton float-right">
+                    <button class="button" type="button" data-toggle="notification-menu"aria-describedby="notificationsCount">
+                      <span class="show-for-sr">Notifications</span>
+                      <span aria-hidden="true"><i class="fi-megaphone"></i></span>
+                    </button>
+                    <span class="alert badge" id="notificationsCount">1</span>
+                  </div>
+        
+                  <div class="dropdown-pane" id="notification-menu" data-dropdown>
+                    No notification at this moment.
+                  </div>
+        
+                  <button class="button dropdown float-right secondary" type="button" data-toggle="dashboard-menu"><i class="fi-torso"></i> Jon Thomas </button>
+                  <div class="dropdown-pane" id="dashboard-menu" data-dropdown>
+                    <ul class="menu vertical">
+                      <li><a href="#"><i class="fi-home"></i> Dashboard</a></li>
+                      <li><a href="#"><i class="fi-torso"></i> Profile</a></li>
+                      <li><a href="#"><i class="fi-widget"></i> Settings</a></li>
+                    </ul>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+        
+            <div id="loginModal" class="reveal" data-animation-in="fadeIn" data-animation-out="fadeOut" data-reveal>
+              <div class="row">
+                <div class="large-6 columns auth-plain">
+                  <div class="signup-panel left-solid">
+                    <p class="welcome">Registered Users</p>
+                    <form>
+                      <div class="row collapse">
+                        <div class="small-2  columns">
+                          <span class="prefix"><i class="fi-torso-female"></i></span>
+                        </div>
+                        <div class="small-10  columns">
+                          <input type="text" placeholder="username">
+                        </div>
+                      </div>
+                      <div class="row collapse">
+                        <div class="small-2 columns ">
+                          <span class="prefix"><i class="fi-lock"></i></span>
+                        </div>
+                        <div class="small-10 columns ">
+                          <input type="text" placeholder="password">
+                        </div>
+                      </div>
+                    </form>
+                    <a href="#" class="button ">Log In </a>
+                  </div>
+                </div>
+        
+                <div class="large-6 columns auth-plain">
+                  <div class="signup-panel newusers">
+                    <p class="welcome"> New User?</p>
+                    <p>Whether you're a GP or mangage a health practice you can create an account here: </p><br>
+                    <a href="signup.html" class="button ">Sign Up</a></br>
+                  </div>
+                </div>
+        
+              </div>
+              <a class="close-reveal-modal">&#215;</a>
+            </div>
+        
+
+      <!-- original content goes in this container -->
+      <div class="off-canvas-content" data-off-canvas-content>
+            <div class="row" >
+              <div class="small-12 medium-3 columns dash-account ">
+                <h2> Account Details </h2>
+                <img class="thumbnail" src="assets/img/medical-practice.jpg" alt="Photo of Uranus.">
+                <h4>Lyn Williams</h4>
+                <strong>Account Type:</strong> Practice Owner<br>
+                <strong>Subscription:</strong> Gold<br>
+                <strong>Live Jobs:</strong> 12<br>
+                <strong>Past Jobs:</strong> 100<br><br>
+                <a href="#">Edit Profile</a> <br>
+                <a href="#">Account Settings</a><br><br>
+        
+              </div>
+        
+              <div class="small-12 medium-9 columns">
+                <div class="row columns">
+                  <h1>Dashboard</h1>
+                </div>
+                <div class="row">
+                  <div class="small-6 medium-3 columns">
+                    <a href="#" class="dasboard-buttons"><i class="fi-torsos"></i> <br> Jobs</a>
+                  </div>
+                  <div class="small-6 medium-3 columns">
+                    <a href="#" class="dasboard-buttons"><i class="fi-calendar"></i> <br> Locum Calendar</a>
+                  </div>
+                  <div class="small-6 medium-3 columns">
+                    <a href="#" class="dasboard-buttons"><i class="fi-clipboard-pencil"></i> <br> Applications</a>
+                  </div>
+                  <div class="small-6 medium-3 columns">
+                    <a href="#" class="dasboard-buttons"><i class="fi-pricetag-multiple"></i> <br> Discounts</a>
+                  </div>
+                </div>
+        
+                <div class="row">
+        
+                  <div class="medium-12 large-6 columns">
+                    <h3>Current Jobs</h3>
+                    <table class='hover'>
+                      <thead>
+                        <tr>
+                        <th>Job title</th>
+                        <th>Job type</th>
+                        <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                      <td><a href="/admin/jobs/1">Doctor Needed</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+        
+                      </tr>
+                      <tr>
+                      <td><a href="/admin/jobs/2">Practice Nurse</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+        
+                      </tr>
+                      <tr>
+                      <td><a href="/admin/jobs/3">Salaried GP with a View to Partnership</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+        
+                      </tr>
+                      <tr>
+                      <td><a href="/admin/jobs/4">Doctor Needed - Urgent</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+        
+                      </tr>
+                      <tr>
+                      <td><a href="/admin/jobs/5">Another Doctor Needed - Urgent</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+        
+                      </tr>
+                      <tr>
+                      <td><a href="/admin/jobs/6">This is the job title</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+                      </tr>
+                      </tbody>
+                      </table>
+                  </div>
+                  <div class="medium-12 large-6 columns">
+                    <h3>Current Applications</h3>
+                    <table class='hover'>
+                      <thead>
+                        <tr>
+                        <th>Job title</th>
+                        <th>Job type</th>
+                        <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                      <td><a href="/admin/jobs/1">Doctor Needed</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+        
+                      </tr>
+                      <tr>
+                      <td><a href="/admin/jobs/2">Practice Nurse</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+        
+                      </tr>
+                      <tr>
+                      <td><a href="/admin/jobs/3">Salaried GP with a View to Partnership</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+        
+                      </tr>
+                      <tr>
+                      <td><a href="/admin/jobs/4">Doctor Needed - Urgent</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+        
+                      </tr>
+                      <tr>
+                      <td><a href="/admin/jobs/5">Another Doctor Needed - Urgent</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+        
+                      </tr>
+                      <tr>
+                      <td><a href="/admin/jobs/6">This is the job title</a></td>
+                      <td>PermanentJob</td>
+                      <td>draft</td>
+                      </tr>
+                      </tbody>
+                      </table>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+        
+        <footer class="footer">
+          <div class="row">
+            <div class="small-12 medium-6 large-5 columns">
+              <p class="logo"><i class="fi-shield"></i> GPUK</p>
+              <p class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Jobs</a>
+                <a href="#">Locums</a>
+                <a href="#">Discount</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </p>
+              <p class="copywrite">Copywrite GPUK © 2015</p>
+            </div>
+            <div class="small-12 medium-6 large-4 columns">
+              <ul class="contact">
+                <li><p><i class="fi-marker"></i>Hwyl Hub, Merthyr Tydfil CF47 8LD</p></li>
+                <li><p><i class="fi-telephone"></i>01685 377777</p></li>
+                <li><p><i class="fi-mail"></i>hello@gpuk.com</p></li>
+              </ul>
+            </div>
+            <div class="small-12 medium-12 large-3 columns">
+              <p class="about">Follow GPUK</p>
+              <p class="about subheader">The one stop rescource for GP's and Medical Practices</p>
+              <ul class="inline-list social">
+                <a href="#"><i class="fi-social-facebook"></i></a>
+                <a href="#"><i class="fi-social-twitter"></i></a>
+                <a href="#"><i class="fi-social-linkedin"></i></a>
+                <a href="#"><i class="fi-social-github"></i></a>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        
+        <!-- close wrapper, no more content after this -->
+      </div>
+
+
+    </div>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+     new WOW().init();
+     </script>
+  </body>
+</html>

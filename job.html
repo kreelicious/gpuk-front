@@ -1,0 +1,211 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPUK</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        
+          <!-- off-canvas title bar for 'small' screen -->
+          <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+            <div class="title-bar-left">
+              <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+              <span class="title-bar-title">Menu</span>
+            </div>
+            <div class="title-bar-right">
+        
+              <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
+            </div>
+          </div>
+        
+          <!-- off-canvas left menu -->
+          <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+            <ul class="vertical dropdown menu" data-dropdown-menu>
+              <li><a href="left_item_1">Home</a></li>
+              <li><a href="left_item_2">Jobs</a></li>
+              <li><a href="left_item_3">locums</a></li>
+              <li><a href="left_item_3">Discounts</a></li>
+              <li><a href="left_item_3">Contact</a></li>
+            </ul>
+          </div>
+        
+          <!-- off-canvas right menu -->
+          <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+            <ul class="vertical dropdown menu" data-dropdown-menu>
+              <li><a href="right_item_1">Login</a></li>
+              <li><a href="right_item_2">Signup</a></li>
+            </ul>
+          </div>
+        
+          <!-- "wider" top-bar menu for 'medium' and up -->
+          <div class="top-bar" id="widemenu">
+            <div class="row ">
+              <div class="top-bar-left medium-8">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li class="menu-text"><a href="/"><img src="assets/img/logo1.png"></a></li>
+                  <li><a href="jobs.html">Jobs</a></li>
+                  <li><a href="locums.html">Locums</a></li>
+                  <li><a href="discounts.html">Discounts</a></li>
+                  <li><a href="about.html">About</a></li>
+                </ul>
+              </div>
+              <div class="top-bar-right medium-4 clearfix">
+                <a href="#" data-open="loginModal" class="button secondary float-right"><i class="fi-home"></i> Login</a>
+                <a href="signup.html" class="button secondary float-right"><i class="fi-clipboard-pencil"></i> Signup</a>
+              </div>
+            </div>
+          </div>
+        
+          <div id="loginModal" class="reveal" data-animation-in="fadeIn" data-animation-out="fadeOut" data-reveal>
+            <div class="row">
+              <div class="large-6 columns auth-plain">
+                <div class="signup-panel left-solid">
+                  <p class="welcome">Registered Users</p>
+                  <form>
+                    <div class="row collapse">
+                      <div class="small-2  columns">
+                        <span class="prefix"><i class="fi-torso-female"></i></span>
+                      </div>
+                      <div class="small-10  columns">
+                        <input type="text" placeholder="username">
+                      </div>
+                    </div>
+                    <div class="row collapse">
+                      <div class="small-2 columns ">
+                        <span class="prefix"><i class="fi-lock"></i></span>
+                      </div>
+                      <div class="small-10 columns ">
+                        <input type="text" placeholder="password">
+                      </div>
+                    </div>
+                  </form>
+                  <a href="#" class="button ">Log In </a>
+                </div>
+              </div>
+        
+              <div class="large-6 columns auth-plain">
+                <div class="signup-panel newusers">
+                  <p class="welcome"> New User?</p>
+                  <p>Whether you're a GP or mangage a health practice you can create an account here: </p><br>
+                  <a href="signup.html" class="button ">Sign Up</a></br>
+                </div>
+              </div>
+        
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+        
+
+
+      <!-- original content goes in this container -->
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="row columns">
+        
+        <hr>
+        <div class="row column text-center">
+          <h2>Full Time GP</h2>
+          <h4>Morlais Health Practice, Merthyr Tydfil</h4>
+          <h5>£100,000 - (6 – 8 Sessions)</h5>
+        </div>
+        <hr>
+        
+        <div class="row">
+          <div class="medium-7 columns">
+            <h4>Job Description</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        
+            <p>NLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <hr>
+            <div class="row">
+              <div class="small-6 medium-2 columns job-icon">
+                <i class="fi-home"></i><br>
+                1 Branch
+              </div>
+              <div class="small-6 medium-2 columns job-icon">
+                <i class="fi-torsos-all"></i><br>
+                10,500 Patients
+              </div>
+              <div class="small-6 medium-2 columns job-icon">
+                <i class="fi-torso-business"></i><br>
+                9 Doctors
+              </div>
+              <div class="small-6 medium-2 columns job-icon">
+                <i class="fi-torso-female"></i><br>
+                10 Nurses
+              </div>
+              <div class="small-6 medium-2 end columns job-icon">
+                <i class="fi-calendar"></i><br>
+                5 - 8  Sessions
+              </div>
+        
+            </div>
+        
+        
+          </div>
+        
+            <div class="medium-5 columns">
+              <h4> Morlais Health Practice, Merthyr Tydfil</h4>
+              <img class="thumbnail" src="http://placehold.it/650x350">
+              <p>Morlais Health Practice, Dowlais, Merthyr Tydfil CF48 1AS</p>
+              <a class="button ">Apply</a>
+              <a class="button hollow">Add to Watchlist</a>
+              <a class="button hollow">See Map</a>
+              <a class="button hollow">Practice Info</a>
+          </div>
+          <hr>
+        
+        </div>
+        
+        <footer class="footer">
+          <div class="row">
+            <div class="small-12 medium-6 large-5 columns">
+              <p class="logo"><i class="fi-shield"></i> GPUK</p>
+              <p class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Jobs</a>
+                <a href="#">Locums</a>
+                <a href="#">Discount</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </p>
+              <p class="copywrite">Copywrite GPUK © 2015</p>
+            </div>
+            <div class="small-12 medium-6 large-4 columns">
+              <ul class="contact">
+                <li><p><i class="fi-marker"></i>Hwyl Hub, Merthyr Tydfil CF47 8LD</p></li>
+                <li><p><i class="fi-telephone"></i>01685 377777</p></li>
+                <li><p><i class="fi-mail"></i>hello@gpuk.com</p></li>
+              </ul>
+            </div>
+            <div class="small-12 medium-12 large-3 columns">
+              <p class="about">Follow GPUK</p>
+              <p class="about subheader">The one stop rescource for GP's and Medical Practices</p>
+              <ul class="inline-list social">
+                <a href="#"><i class="fi-social-facebook"></i></a>
+                <a href="#"><i class="fi-social-twitter"></i></a>
+                <a href="#"><i class="fi-social-linkedin"></i></a>
+                <a href="#"><i class="fi-social-github"></i></a>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        
+        <!-- close wrapper, no more content after this -->
+      </div>
+
+
+    </div>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+     new WOW().init();
+     </script>
+  </body>
+</html>
